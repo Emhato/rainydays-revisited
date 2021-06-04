@@ -1,0 +1,60 @@
+img {
+    height: 200px;
+    width: 147px;
+    margin-left: 20px;
+}
+  
+form {
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.form-error {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+a {
+    padding: 0;
+}
+  
+input {
+    margin-bottom: 30px;
+}
+  
+textarea {
+    height: 200px;
+}
+  
+.text {
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 50px;
+}
+  
+h3, h4 {
+    font-size: 1.2rem;
+    border-style: none none solid none;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+  
+h3 {
+    margin-right: 20px;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+  
+@media only screen and (min-width: 1200px) {
+    main {
+      max-width: 800px;
+      margin: auto;
+    }
+}

@@ -1,0 +1,59 @@
+.shop {
+    border-style: none none solid none;
+}
+
+/* img {
+    height: 200px;
+    width: 147px;
+    margin: 0 20px 0 20px;
+} */
+
+.image {
+    height: 200px;
+    width: 147px;
+    margin: 0 20px 0 20px;
+    background-size: cover;
+    background-position: center center;
+}
+
+a {
+    /* text-decoration: none; */
+    color: black;
+}
+
+h1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.api-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .api-container {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .image {
+        height: 466.6px;
+        width: 343px;
+        margin: 0 20px 0 20px;
+    }
+
+    main {
+        margin-left: 40px;
+    }
+
+}

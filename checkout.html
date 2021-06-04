@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays checkout</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet"> 
+    <!-- Hotjar Tracking Code for https://sleepy-leakey-b9e061.netlify.app/index.htm -->
+    <!-- <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:2289500,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script> -->
+</head>
+<body>    
+    <header>
+        <label for="hamburger"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger">
+        <li><a  href="index.html"><img class="logo" src="images/rainydays-logo.png" alt="Rainydays logo"></a></li>
+        <nav>
+          <ul>
+            <li><a class="home" href=index.html>Home</a></li>
+            <li><a class="shop" href="shop.html">Shop</a></li>
+            <li><a class="about" href=about.html>About</a></li>
+            <li><a class="contact" href=contact.html>Contact</a></li>
+            <li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <h1>Order summary</h1>
+        <section class="summary">
+            <h2>Hiking jacket</h2>
+            <img class="item" src="images/hiking-jacket.jpg" alt="image of your selected item, the hiking jacket">
+            <p class="quantity">Quantity: </p>
+            <button class="remove">remove item</button>
+            <p class="pri">Prize: </p>
+            <p class="size">Size: M</p>
+        </section>
+        <section class="ordersummary">
+
+        </section>
+        <section>
+          <h3>Address</h3>
+          <form id="form">
+              <div class="form-error" id="firstNameError">Must be at least two characteres</div>            
+              <label class="fn" for="firstname">First name*</label>
+              <input id="firstName" type="text" name="firstname">
+
+              <div class="form-error" id="lastNameError">Must be at least two characteres</div>
+              <label class="ln" for="lastname">Last name*</label>
+              <input id="lastName" type="text" name="lastname">
+
+              <div class="form-error" id="emailError">Please enter a vailid email address</div>
+              <label class="em" for="email">E-mail*</label>
+              <input id="email" type="email" name="email">
+
+              <div class="form-error" id="addressError">Please fill out your address</div>
+              <label class="al1" for="adress1">Address line 1*</label>
+              <input id="address" type="text" name="adress1">
+
+              <label class="al2" for="adress2">Address line 2</label>
+              <input type="text" name="adress2">
+
+              <div class="form-error" id="cityError">Please fill out with the city you want us to ship to</div>
+              <label class="cs" for="city">City/ Surburb*</label>
+              <input id="city" type="text" name="city">
+
+              <div class="form-error" id="zipError">Must be at least four digets</div>
+              <label class="zp" for="zip">Zip/ Postcode*</label>
+              <input id="zip" type="text" name="zip">
+
+              <div class="form-error" id="phoneError">Must be at least eight digets</div>
+              <label class="phone" for="phonenumber">Phone*</label>
+              <input id="phone" type="tel" name="phonenumber">
+
+
+                <h4>Payment</h4>
+              <div class="form-error" id="cardnumberError">Must be at least 16 digets</div>
+              <label class="cn" for="cardnumber">Card number*</label>
+              <input id="cardnumber" type="text" name="cardnumber">
+
+              <label class="ep" for="expirydate">Expiry date*</label>
+              <input type="date" name="expirydate">
+
+              <div class="form-error" id="securityCodeError">Must be three digets</div>
+              <label class="sc" for="security code">Security code*</label>
+              <input id="securityCode" type="text" name="security code">
+            
+              <button class="pay">Pay and place order</button>
+
+          </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
