@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Rainydays</title>
+    <title>Rainydays Hiking Jacket</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,600&family=Roboto&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/shop.css" rel="stylesheet">
+    <link href="css/spesific.css" rel="stylesheet"> 
     <!-- Hotjar Tracking Code for https://sleepy-leakey-b9e061.netlify.app/index.htm -->
     <!-- <script>
       (function(h,o,t,j,a,r){
@@ -37,13 +37,34 @@
         </nav>
     </header>
     <main>
-        <div class="grid">
-            <div class="menImage">
+        <div class="text-grid">
+            <div class="api-container"></div>
+
+            <!-- <button class="addToBag pluss">Add to bag</button> -->
+            <button class="choice"><a href="checkout.html">Check out</a></button>
+            
+            <div class="details">
+
+              <label class="headers" for="product-details">Product details & fit</label>
+              <input type="checkbox" id="product-details">
+              <p class="proddet">Lorem ipusum dolor sit amet, consectetur adipiscing elit. In tempus neque non 
+              nunc viverra, a auctor ligula laoreet. Quisque varius tempus justo, sit amet 
+              maximus lorem accumsan quis. Ut nec blandit eros. Ut congue massa non </p>
+
+              <label class="headers" for="fabric-care">Fabric & care</label>
+              <input type="checkbox" id="fabric-care">
+              <p class="fabcare">Lorem ipusum dolor sit amet, consectetur adipiscing elit. In tempus neque non 
+              nunc viverra, a auctor ligula laoreet. Quisque varius tempus justo, sit amet 
+              maximus lorem accumsan quis. Ut nec blandit eros. Ut congue massa non </p>
+
+              <label class="headers" for="shipping-info">Shipping</label>
+              <input type="checkbox" id="shipping-info">
+              <p class="shipping">Lorem ipusum dolor sit amet, consectetur adipiscing elit. In tempus neque non 
+              nunc viverra, a auctor ligula laoreet. Quisque varius tempus justo, sit amet 
+              maximus lorem accumsan quis. Ut nec blandit eros. Ut congue massa non </p>
+
             </div>
-            <div class="womenImage">
-            </div>
-        </div>
-        <div class="featured-container">  
+            <p class="space"> </p>
         </div>
     </main>
     <footer>
@@ -72,6 +93,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/shop.js"></script>
+    <!-- <script src="js/array.js"></script> -->
+    <script src="js/spesific.js"></script>
 </body>
 </html>

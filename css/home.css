@@ -1,17 +1,31 @@
-body {
+/* body {
     background-image: url(/images/rainidays2-mobile-homepage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+
+} */
+
+    /* min-height: 100vh; */  
+
+.top-screen {
+    background-image: url(/images/rainidays2-mobile-homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 90vh;
 }
-  
+
 .home {
     border-style: none none solid none;
 }
+
+/* .logo {
+    display: none;
+} */
   
-.fa-bars {
+/* .fa-bars {
     color: var(--white);
-}
+} */
   
 h1, h2 {
     color: var(--white);
@@ -25,7 +39,7 @@ h1 {
 
 .cta {
     margin: 100px auto;
-    background-color:rgba(10,54,64,0.5);
+    background-color:rgba(10,54,64,0.9);
 }
   
 h2 {
@@ -35,6 +49,9 @@ h2 {
     right: 20px;
 }
 
+/* .featured-container {
+    display: none;
+} */
 
 .featured-image {
     height: 350px;
@@ -48,30 +65,28 @@ h2 {
     margin-left: 0;
 }
 
-/* .card {
-    max-width: 400px;
-} */
-
-/* .wrap {
-    max-width: 300px;
-} */
-  
 .featured-container {
+    /* display: block; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-/* li a {
-    color: var(--white);
-}
-   */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     .top-screen {
       background-image: url(/images/hjemmesidebilde.jpg);
+      background-repeat: no-repeat;
       background-position: bottom;
-      min-height: 90vh;
+      min-height: 100vh;
     }
+
+    .cta {
+        background-color:rgba(10,54,64,0.5);
+    }
+
+    /* .logo {
+        display: block;
+    } */
 
     body {
         background-image: none;
@@ -88,5 +103,6 @@ h2 {
     h2 {
       font-size: 3rem;
     }
+
 }
   

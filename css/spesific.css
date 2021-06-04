@@ -1,0 +1,101 @@
+.shop {
+    border-style: none none solid none;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.choice {
+    display: none;
+}
+
+.details-image {
+    height: 200px;
+}
+
+/*Add to bag*/
+
+.size {
+    margin-bottom: 40px;
+}
+
+
+h3 {
+    margin-top: 30px;
+}
+
+button {
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--logo);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 125px;
+  }
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*Details*/
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.proddet, .fabcare, .shipping {
+    display: none;
+}
+
+
+#product-details, #fabric-care, #shipping-info {
+    display: none;
+}
+
+#product-details:checked ~ .proddet, #fabric-care:checked ~ .fabcare, #shipping-info:checked ~ .shipping {
+    display: block;
+}
+
+.headers {
+    margin: 20px 100px 0 20px;
+    font-size: 1.3rem;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+
+.headers:hover {
+    cursor: pointer;
+}
+
+.space {
+    margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .details-image {
+        height: 375px;
+        width: 275px;
+        margin-left: 20px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+}

@@ -69,16 +69,22 @@ button:hover {
 }
   
 /* mobile menu */
+
+/* header {
+    height: 70px;
+} */
   
 nav {
     display: none;
-    height: 80px;
+    /* height: 80px; */
+    background-color: var(--white);
+    min-height: 100vh;
 }
   
 li {
     list-style: none;
-    margin-left: 20px;
-    padding: 20px 0 20px 0;
+    /* margin-left: 20px; */
+    margin: 20px 0 20px 20px;
 }
   
 li a {
@@ -164,7 +170,7 @@ footer {
   
 /* for laptop */
   
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     /* menu */
     .fa-bars {
       display: none;
@@ -172,6 +178,9 @@ footer {
   
     nav {
       display: block;
+      background-color: unset;
+      min-height: unset;
+      height: 80px;
     }
   
     li {
@@ -184,7 +193,7 @@ footer {
     li a {
       display: block;
       text-decoration: none;
-      font-size: 3rem;
+      font-size: 2.5rem;
       border-style: none;
     }
   
