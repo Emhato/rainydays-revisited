@@ -45,3 +45,9 @@ async function getDetails() {
 }
 
 getDetails()
+
+const checkoutButton = document.querySelector(".choice");
+
+addItem.addEventListener("click", function() {
+    checkoutButton.style.display = "block";
+})

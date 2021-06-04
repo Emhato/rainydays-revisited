@@ -155,6 +155,7 @@ function lengthCheck(value, len) {
 
 const pluss = document.querySelector(".pluss")
 const minus = document.querySelector(".minus");
+const quantity = document.querySelector(".quantity");
 
 let getItemNumber = parseInt(getItem)
 
@@ -163,6 +164,7 @@ pluss.addEventListener("click", function() {
     localStorage.setItem('numberOfItems',getItemNumber)
     if (getItemNumber >= 0) {
         bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItemNumber})</i></a></li>`;
+        quantity.innerHTML = `Quantity: ${getItemNumber}`;
     }
 });
 
@@ -171,5 +173,8 @@ minus.addEventListener("click", function() {
     localStorage.setItem('numberOfItems',getItemNumber)
     if (getItemNumber >= 0) {
         bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItemNumber})</i></a></li>`;
+        quantity.innerHTML = `Quantity: ${getItemNumber}`;
     }
 });
+
+quantity.innerHTML += `${getItem}`

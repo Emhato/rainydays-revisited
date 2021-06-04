@@ -51,6 +51,16 @@ a {
     text-decoration: none;
     color: var(--white);
 }
+
+/* Adjusting buttons */
+
+.adjust {
+    width: 30px;
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
   
 @media only screen and (min-width: 1200px) {
     main {
