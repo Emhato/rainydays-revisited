@@ -150,3 +150,26 @@ function lengthCheck(value, len) {
 //         bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItem -= 1})</i></a></li>`;
 //     }
 // });
+
+
+
+const pluss = document.querySelector(".pluss")
+const minus = document.querySelector(".minus");
+
+let getItemNumber = parseInt(getItem)
+
+pluss.addEventListener("click", function() {
+    getItemNumber += 1;
+    localStorage.setItem('numberOfItems',getItemNumber)
+    if (getItemNumber >= 0) {
+        bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItemNumber})</i></a></li>`;
+    }
+});
+
+minus.addEventListener("click", function() {
+    getItemNumber -= 1;
+    localStorage.setItem('numberOfItems',getItemNumber)
+    if (getItemNumber >= 0) {
+        bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItemNumber})</i></a></li>`;
+    }
+});

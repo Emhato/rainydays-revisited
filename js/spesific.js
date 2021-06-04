@@ -33,8 +33,7 @@ async function getDetails() {
                                     <h1>${data.name}</h1>
                                     <div class="details-image"
                                         style="background-image: url('${data.images[0].src}')"></div>
-                                    </div>
-                                    <button class="addToBag pluss" data-product="${data.id}">Add to bag</button>`;
+                                    </div>`;
 
 
     } catch (error) {

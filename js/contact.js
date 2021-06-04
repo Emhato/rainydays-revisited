@@ -57,7 +57,7 @@ function lengthCheck(value, len) {
     }
 }
 
-// item in bag
+// // item in bag
 // let getItem = localStorage.getItem("numberOfItems");
 
 
