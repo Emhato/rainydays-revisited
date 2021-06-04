@@ -85,8 +85,6 @@ function formValidation(event) {
     } else {
         securityCodeError.style.display = "block";
     }
-
-    console.log("hello");
 }
 
 form.addEventListener("submit", formValidation);
@@ -99,15 +97,9 @@ function linkToButton() {
     }
 }
 
-// CHANGE removed the <button> so there wasen't an extra button
-
-// button.addEventListener("click", function() {
-//     button.innerHTML += `<a href="checkout-success.html"></a>`
-// })
 
 form.addEventListener("submit", linkToButton);
 
-// function linkToButton
 
 function emailValidation(email) {
     const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -123,33 +115,7 @@ function lengthCheck(value, len) {
     }
 }
 
-// item in bag
 
-
-
-// let getItem = localStorage.getItem("numberOfItems");
-
-
-
-// if (getItem !== null) {
-//     bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItem})</i></a></li>`;
-// } else {
-//     `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>`;
-// }
-// quantity.innerHTML += `${getItem}`;
-// prize.innerHTML += `${getItem * 1999}kr`;
-
-
-// change quantity
-
-// const add = document.querySelector(".add");
-// const remove = document.querySelector(".remove");
-
-// remove.addEventListener("click", function() {
-//     if (getItem > 0) {
-//         bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItem -= 1})</i></a></li>`;
-//     }
-// });
 
 
 

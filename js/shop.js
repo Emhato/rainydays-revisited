@@ -31,15 +31,10 @@ async function getJackets() {
 
         const data = await response.json();
 
-        console.log(data);
-
-        // const facts = data.data;
 
         featured.innerHTML = "";
 
         for (let i = 0; i < data.length; i++) {
-
-            console.log(data[i].id)
 
             if (i === 9) {
                 break;
@@ -56,20 +51,9 @@ async function getJackets() {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         featured.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 
 }
 
 getJackets();
-// item in bag
-
-// let getItem = localStorage.getItem("numberOfItems");
-
-
-// if (getItem !== null) {
-//     bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItem})</i></a></li>`;
-// } else {
-//     `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>`;
-// }

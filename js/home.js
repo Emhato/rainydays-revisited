@@ -1,12 +1,3 @@
-// let getItem = localStorage.getItem("numberOfItems");
-
-
-// if (getItem !== null) {
-//     bag.innerHTML = `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag">(${getItem})</i></a></li>`;
-// } else {
-//     `<li><a class="bag" href="checkout.html"><i class="fas fa-shopping-bag"></i></a></li>`;
-// }
-
 const url = "https://www.emmaht.one/wp-json/wc/v3/products?category=18&consumer_key=ck_5e77641893a6aa66990a850de7bd96c0ea77ece6&consumer_secret=cs_45a21709427b5c89f958f56188df6ac80fcc7b3b";
 
 const featured = document.querySelector(".featured-container");
@@ -17,15 +8,10 @@ async function getJackets() {
 
         const data = await response.json();
 
-        console.log(data);
-
-        // const facts = data.data;
-
         featured.innerHTML = "";
 
         for (let i = 0; i < data.length; i++) {
 
-            console.log(data[i].id)
 
             if (i === 9) {
                 break;
@@ -42,7 +28,6 @@ async function getJackets() {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         featured.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 

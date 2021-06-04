@@ -2,12 +2,6 @@
     border-style: none none solid none;
 }
 
-/* img {
-    height: 200px;
-    width: 147px;
-    margin: 0 20px 0 20px;
-} */
-
 .image {
     height: 200px;
     width: 147px;
@@ -17,7 +11,6 @@
 }
 
 a {
-    /* text-decoration: none; */
     color: black;
 }
 

@@ -44,10 +44,7 @@ a {
 button {
     border-style: solid;
     padding: 5px 10px 5px 10px;
-    /* border-radius: 8px; */
     color: var(--white);
-    /* background-color: var(--white); */
-    /* background-color:rgba(242,242,242, 0.1); */
     background-color:rgba(10,54,64,0.8);
     border: none;
     box-shadow: 0 10px 20px 0 rgba(10,54,64,0.9);
@@ -69,21 +66,15 @@ button:hover {
 }
   
 /* mobile menu */
-
-/* header {
-    height: 70px;
-} */
   
 nav {
     display: none;
-    /* height: 80px; */
     background-color: var(--white);
     min-height: 100vh;
 }
   
 li {
     list-style: none;
-    /* margin-left: 20px; */
     margin: 20px 0 20px 20px;
 }
   

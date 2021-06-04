@@ -8,15 +8,9 @@ async function getJackets() {
 
         const data = await response.json();
 
-        console.log(data);
-
-        // const facts = data.data;
-
         apiContainer.innerHTML = "";
 
         for (let i = 0; i < data.length; i++) {
-
-            console.log(data[i].id)
 
             if (i === 9) {
                 break;
@@ -31,7 +25,6 @@ async function getJackets() {
         }
     } catch (error) {
         console.log(error);
-        console.log("An error occurred");
         apiContainer.innerHTML = "An error has occured, sorry for the inconvinience this may cause!";
     }
 
